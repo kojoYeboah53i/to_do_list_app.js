@@ -49,7 +49,10 @@ function addTodo(event){
      if(item.classList[0] == 'trash-btn'){
             const todo = item.parentElement;
             todo.classList.add("fall");
-            // todo.remove();
+           // #for css animation, todo.addEventListener('animationend', function ){
+            todo.addEventListener('transitionend', function (){
+            todo.remove();
+            });
      }
 
      //checkmark
