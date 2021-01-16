@@ -48,7 +48,8 @@ function addTodo(event){
      console.log(item);
      if(item.classList[0] == 'trash-btn'){
             const todo = item.parentElement;
-            todo.remove();
+            todo.classList.add("fall");
+            // todo.remove();
      }
 
      //checkmark
