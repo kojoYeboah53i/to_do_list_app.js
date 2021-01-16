@@ -17,11 +17,11 @@ function addTodo(event){
 
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
-     const newTodo = document.createElement("todo");
-    todoDiv.classList.add("todo");
+    //  const newTodo = document.createElement("todo");
+    // todoDiv.classList.add("todo");
 
      const newTodo = document.createElement('li')
-     newTodo.innerText = "hey";
+     newTodo.innerText = "style-this";
      newTodo.classList.add('todo-item');
 
      const completedButton = document.createElement('button');
@@ -33,5 +33,8 @@ function addTodo(event){
      completedButton.innerHTML = '<i class="fas fa-trash"></i>';
      completedButton.classList.add("completed-btn");
      todoDiv.appendChild(trashButton);
+
+     //create the html
+     todolist.appendChild(todoDiv)
 
 }
