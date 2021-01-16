@@ -54,14 +54,17 @@ form button:hover{
 }
 
 .todo{
+    position: relative;
+    left: -3rem;
     margin: 0.5rem;
     background: white;
     color:black;
     font-size: 1.5rem;
     display:flex;
+    width: 123%;
     justify-content: space-between;
     align-items: center;
-    transition: all 1.2s ease;
+    transition: all 1s ease;
 }
 
 .todo li{
