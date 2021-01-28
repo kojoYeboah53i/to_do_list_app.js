@@ -52,7 +52,9 @@ function addTodo(event){
            // #for css animation, todo.addEventListener('animationend', function ){
             todo.addEventListener('transitionend', function (){
             todo.remove();
-            });
+            // this.delete("")
+            
+        });
      }
 
      //checkmark
