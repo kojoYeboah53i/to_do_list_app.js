@@ -14,10 +14,23 @@
             <span class="content-name">Name</span>
         </label>
         </div>
+
+        <!-- <img src="./final_touch.png" alt="" srcset=""> -->
+        <div class="give" data-altitude="300" data-speed="2.4" data-distance="700">
+        <img src="./give.png" alt="" srcset="" width="500" height="300">    
+        </div>
     </div>
     <style>
+        .give{
+            /* background-image: ('give.png'); */
+            position: absolute;
+            left: 0;
+            height:110px;
+            width: 70px;
+            transition: left 0s linear ease;
+        }
         body{
-            height: 60vh;
+            height: 100vh;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -81,5 +94,22 @@
             transform: translateX(0%);
         }
     </style>
+
+    <script>
+    const give = document.querySelector(".give")
+    window.addEventListener('load', getdata);
+
+    //functions
+    function getdata(){
+    var altitude, speed, distance;
+    altitude = give.dataset.altitude;
+    speed = give.dataset.speed;
+    distance = give.dataset.distance;
+    
+    give.style.top = altitude+ "px";
+    give.style.transitionDuration =speed+"s";
+    give.style.left = distance+"px";
+}
+    </script>
 </body>
 </html>
