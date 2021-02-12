@@ -36,6 +36,9 @@ function addTodo(event){
      //create the html
      todolist.appendChild(todoDiv)
 
+     const store = await store_list();
+     
+
      todoInput.value = "";
 
 }
@@ -62,3 +65,10 @@ function addTodo(event){
 
    }
 
+   async function store_list(){
+       return new Promise(resolve, reject =>{
+           setTimeout(() => {
+               resolve({data:"attempting to store todo list "})
+           }, 3000);
+       })
+   }
