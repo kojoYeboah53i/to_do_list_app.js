@@ -1,0 +1,24 @@
+.parent{
+background-color: aqua;
+padding: 9px;
+}
+.child{
+
+    font-size: 28px;
+    text-transform: uppercase;
+
+}
+
+.child-one{
+background-color: blue;
+}
+
+.child-two{
+    background-color: brown;
+
+}
+
+.child-three{
+    background-color: chartreuse;
+
+}
