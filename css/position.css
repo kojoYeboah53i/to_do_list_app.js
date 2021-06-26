@@ -1,6 +1,14 @@
+body{
+  height:   200vh;
+}
+
 .parent{
+top: 100px;
 background-color: aqua;
 padding: 9px;
+font-size: 28px;
+color: white;
+position: relative;
 }
 .child{
 
@@ -15,10 +23,37 @@ background-color: blue;
 
 .child-two{
     background-color: brown;
-
+    position: absolute;
+    top: 0;
 }
 
 .child-three{
     background-color: chartreuse;
-
+    position: fixed;
+    top:0;
 }
+
+/*
+! fixed
+  if the parent element has position fixed,
+   it doesn't move when u scroll
+   -any element with position fixed is relative to the viewport
+
+
+! Relative
+  an element with position relative allows the 
+  childred to take the property absolute to it
+   the move within the element
+
+! Absolute 
+ useful when the parent element has position relative
+ -if position relative is not not applied to its direct parent 
+ it removes from the dom and assues view as its relative parent
+
+
+
+
+
+
+
+*/
